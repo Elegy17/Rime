@@ -1,0 +1,9 @@
+# Rime user dictionary
+#@/db_name	wubi86
+#@/db_type	userdb
+#@/rime_version	1.11.0
+#@/tick	8
+#@/user_id	Realme-GT5-fcitx5
+mghi 	同步	c=4 d=3.97017 t=8
+pgpg 	宝宝	c=2 d=1.98012 t=8
+tewq 	我爱你	c=2 d=1.99005 t=8

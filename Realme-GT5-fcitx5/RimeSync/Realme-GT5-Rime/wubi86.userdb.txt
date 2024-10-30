@@ -1,0 +1,75 @@
+# Rime user dictionary
+#@/db_name	wubi86
+#@/db_type	userdb
+#@/rime_version	1.11.2
+#@/tick	198
+#@/user_id	Realme-GT5-Rime
+adbj 	英雄联盟	c=15 d=13.781 t=198
+awvt 	黄仙群	c=1 d=0.955997 t=198
+djya 	百度	c=3 d=2.82539 t=198
+dymt 	百度网盘	c=1 d=0.960789 t=198
+fblt 	地图	c=2 d=1.9802 t=198
+fcln 	劫	c=7 d=6.20557 t=198
+fcu 	去	c=1 d=1 t=172
+ffff 	土	c=1 d=0.774916 t=198
+fq 	无	c=3 d=2.89806 t=198
+fquj 	无间	c=1 d=0.951229 t=198
+fqv 	无	c=3 d=2.92156 t=198
+gii 	不	c=1 d=1 t=140
+hjj 	卓	c=2 d=1.99005 t=195
+hu 	瞳	c=1 d=1 t=164
+iq 	光	c=2 d=1.57328 t=198
+iqjm 	光遇	c=1 d=0.798516 t=198
+jgh 	是	c=1 d=1 t=141
+jjdd 	是是非非	c=1 d=1 t=160
+jm 	遇	c=2 d=1.58116 t=198
+kaht 	呀	c=1 d=0.882497 t=198
+kgqt 	嗷	c=1 d=1 t=133
+knh 	叫	c=1 d=1 t=138
+kru 	啦	c=1 d=1 t=179
+krub 	听闻	c=1 d=1 t=177
+ktk 	咯	c=1 d=1 t=175
+ktqn 	吃饭	c=1 d=1 t=174
+ktqn 	吃饱	c=1 d=1 t=176
+ktrt 	哦	c=1 d=1 t=132
+kwkw 	哈哈	c=1 d=1 t=197
+kwwl 	中华人民共和国	c=5 d=3.97017 t=198
+lklg 	回车	c=3 d=2.91202 t=144
+ltif 	输入法	c=5 d=3.92162 t=198
+mghi 	同步	c=4 d=3.97017 t=198
+mgyy 	同文	c=4 d=3.1713 t=198
+mqte 	网盘	c=3 d=2.83955 t=198
+pfju 	寒	c=13 d=11.2931 t=198
+pgpg 	宝宝	c=5 d=3.70637 t=198
+pv 	安	c=1 d=0.980199 t=198
+pvf 	安	c=1 d=1 t=194
+q 	我	c=1 d=1 t=198
+qvfp 	键	c=2 d=1.96079 t=145
+skss 	杏林	c=2 d=1.99501 t=150
+ssdd 	梦魇	c=1 d=1 t=161
+tewq 	我爱你	c=2 d=1.99005 t=198
+tfln 	德	c=2 d=1.97032 t=198
+thfc 	自动	c=1 d=0.995012 t=198
+trnt 	我	c=2 d=1.86936 t=171
+ubii 	逆水	c=14 d=12.0394 t=198
+uipf 	逆水寒	c=1 d=0.927743 t=198
+uj 	间	c=3 d=2.91259 t=198
+ujd 	间	c=3 d=2.9362 t=198
+vb 	好	c=1 d=1 t=131
+wftc 	什么	c=1 d=1 t=139
+wqin 	您	c=1 d=0.995012 t=198
+wqvb 	你好	c=5 d=3.92439 t=198
+yffu 	永劫无间	c=2 d=1.99501 t=198
+ym 	高	c=1 d=0.970446 t=198
+ymkf 	高	c=1 d=0.99005 t=198
+ynfc 	启动	c=1 d=1 t=198
+ynii 	永	c=7 d=6.17461 t=198
+yout 	变产	c=1 d=1 t=180
+ysmf 	谢树财	c=1 d=0.960789 t=198
+ysyc 	谢树育	c=1 d=0.965605 t=198
+yukq 	说	c=1 d=1 t=142
+yyy 	言	c=2 d=1.99501 t=163
+encdymt 	百度网盘	c=0 d=0.0955997 t=198
+enciqjm 	光遇	c=0 d=0.0794534 t=198
+encuipf 	逆水寒	c=0 d=0.0923116 t=198
+encyffu 	永劫无间	c=0 d=0.0763379 t=198

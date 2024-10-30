@@ -1,0 +1,37 @@
+# wubi86.myself.config.dict.yaml
+---
+name: wubi86.config
+version: "1.7"
+sort: by_weight
+use_preset_vocabulary: true
+# 导入扩充词库
+import_tables:
+  - dicts/wubi86_simp    # 简体词库
+  # - dicts/wubi86_del   # 繁體詞庫
+  # - dicts/wubi86    # 简繁词库-原版
+  - dicts/wubi86_My    # 个人自建词库
+  - dicts/wubi86.basiccmpl     # ---------- Unicode 汉字表 -------
+  - dicts/wubi86.extacmpl
+  - dicts/wubi86.extbcmpl
+  - dicts/wubi86.extc
+  - dicts/wubi86.extccmpl
+  - dicts/wubi86.extd
+  - dicts/wubi86.exte
+  - dicts/wubi86.extf
+  - dicts/wubi86.extg
+  - dicts/wubi86.exth         # ---------- Unicode 汉字表 -------
+...
+
+# Rime extended dictionary
+ # encoding: utf-8
+ 
+ # ---
+ # name: extended
+ # version: "2023-11-10"
+
+ # import_tables:
+  # - dicts/sougou_standard # 搜狗标准词库
+  # - dicts/A # 扩充词库 A，此处 A 应为实际词库名称
+  # - dicts/B # 扩充词库 B，此处 B 应为实际词库名称
+ # ...
+  # 如果是带有词条的词库，请在这里，按照编码格式添加词条

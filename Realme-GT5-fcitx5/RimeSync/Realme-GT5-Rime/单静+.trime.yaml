@@ -1,0 +1,88 @@
+# Trime style settings
+# encoding: utf-8
+
+config_version: '2.2'
+name: 单静+ #方案名称
+author: '单单 <cxprcn@gmail.com>' #作者资讯
+
+conf:
+  # 其他参数在 单静.trime.yaml 修改
+  # 数字、编辑、功能键盘
+  num_height: 71 #按键高度
+  # 添加数字行
+  num_line:
+    height: 39 # 数字行按键高度
+    __patch: 单静.patch.无障碍:/num_line?
+  plus:
+    'keys/@4/hint': ' '
+    'keys/@7/hint': ' '
+    'keys/@0/': { click: num1, __include: conf/num_line }
+    'keys/@after 0/': { click: num2 }
+    'keys/@after 1/': { click: num3 }
+    'keys/@after 2/': { click: num4 }
+    'keys/@after 3/': { click: num5 }
+    'keys/@after 4/': { click: num6 }
+    'keys/@after 5/': { click: num7 }
+    'keys/@after 6/': { click: num8 }
+    'keys/@after 7/': { click: num9 }
+    'keys/@after 8/': { click: num0 }
+
+style:
+  __include: 单静.trime:/style
+  key_height: 61 #符号、颜文字键盘 按键高度
+
+fallback_colors:
+  __include: 单静.trime:/fallback_colors
+
+preset_color_schemes:
+  __include: 单静.trime:/preset_color_schemes
+
+preset_keyboards:
+  __include: danjing:/kbs
+
+  default:
+    __include: 单静.trime:/preset_keyboards/default
+    __patch: conf/plus
+
+  letter:
+    __include: 单静.trime:/preset_keyboards/letter
+    __patch: conf/plus
+
+  qwertys:
+    __include: 单静.trime:/preset_keyboards/qwertys
+    __patch: conf/plus
+
+  qwerty_:
+    __include: 单静.trime:/preset_keyboards/qwerty_
+    __patch: conf/plus
+
+  number:
+    __include: 单静.trime:/preset_keyboards/number
+    height: { __include: conf/num_height }
+
+  edit:
+    __include: 单静.trime:/preset_keyboards/edit
+    height: { __include: conf/num_height }
+
+  func:
+    __include: 单静.trime:/preset_keyboards/func
+    height: { __include: conf/num_height }
+
+android_keys:
+  __include: trime:/android_keys
+
+preset_keys:
+  __include: 单静.trime:/preset_keys
+  num1: { label: 1, send: 1 }
+  num2: { label: 2, send: 2 }
+  num3: { label: 3, send: 3 }
+  num4: { label: 4, send: 4 }
+  num5: { label: 5, send: 5 }
+  num6: { label: 6, send: 6 }
+  num7: { label: 7, send: 7 }
+  num8: { label: 8, send: 8 }
+  num9: { label: 9, send: 9 }
+  num0: { label: 0, send: 0 }
+  kb_qwerty: { label: '36键', send: Eisu_toggle, select: default }
+  kb_qwertys: { label: '37键', send: Eisu_toggle, select: qwertys }
+  kb_qwerty_: { label: '40键', send: Eisu_toggle, select: qwerty_ }
