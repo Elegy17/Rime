@@ -1,0 +1,78 @@
+# wubi86_My.dict.yaml
+---
+name: wubi86_My
+version: "1.0"
+sort: by_weight
+columns:
+  - text
+  - code
+  - weight
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaZa"
+use_preset_vocabulary: true
+...
+
+# 常用字符
+——	zzvh	0
+、	zzvd	0
+（）	zzvk	0
+()	zzvk	0
+！	zzvt	0
+!	zzvy	0
+
+# 自定义词语
+英雄联盟	adbj	0
+
+# 地名
+广西贵港市	ysky	0
+贵港市	kiym	0
+覃唐区	syaq	0
+三里镇	djqf	0
+南兴屯	figb	0
+
+# 人名
+谢树财	ysmf	1
+吉布伍呷	fdwk	1
+谢宾	ympr	1
+黄仙群	awvt	1
+谢树育	ysyc	1
+谢深	ytip	0
+邹镇好	qqvb	0
+靳婉淇	avia	0
+李广信	sywy	0
+李俊	sbwc	0
+林晨	ssjd	0
+谢宏帆	ypmh	0
+谢宏安	yppv	0
+谢宏定	yppg	0
+谢宏国	yplg	0
+谢宏喜	ypfk	0
+谢宏炫	ypoy	0
+谢宏烨	ypow	0
+谢宏雄	ypdc	0
+谢宏盈	ypec	0
+谢植彬	ysss	0
+谢植锋	ysqt	0
+谢树茂	ysad	0
+谢树林	ysss	0
+谢树荣	ysap	0	
+谢云保	yfwk	0
+杨永业	syog	0
+谢宏恒	ypng	0
+
+# 生僻字
+𰻞	pexp	0
+
+# 邮箱
+@gmail.com	zmail	0
+@qq.com	zmail	0
+@126.com	zmail	0
+@163.com	zmail	0

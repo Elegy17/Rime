@@ -1,0 +1,11 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin_simp.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	8
+#@/user_id	Realme-GT5-RimeZW
+hou xuan 	候选	c=2 d=1.97025 t=8
+tong bu 	同步	c=2 d=1.99501 t=8
+wu 	无	c=2 d=1.98012 t=8
+you 	有	c=1 d=0.97531 t=8
+zhu shi 	注释	c=1 d=1 t=8

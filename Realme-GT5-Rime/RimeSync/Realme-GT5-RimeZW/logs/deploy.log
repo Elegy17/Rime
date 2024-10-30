@@ -1,0 +1,1179 @@
+--------- beginning of main
+[ 10-30 21:35:10.930 22084:22084 D/BufferQueueConsumer ]
+[](id:564400000010,api:0,p:-1,c:22084) connect: controlledByApp=false
+
+[ 10-30 21:35:10.934 22084:22135 D/BufferQueueProducer ]
+[VRI[Pref]#16(BLAST Consumer)16](id:564400000010,api:1,p:22084,c:22084) connect: api=1 producerControlledByApp=true
+
+[ 10-30 21:35:10.934 22084:22135 E/OpenGLRenderer ]
+Unable to match the desired swap behavior.
+
+[ 10-30 21:35:10.935 22084:22084 I/SurfaceControl ]
+ setExtendedRangeBrightness sc=Surface(name=com.osfans.trime.accessibility/com.osfans.trime.Pref)/@0xb4504ac,currentBufferRatio=1.0,desiredRatio=1.0
+
+[ 10-30 21:35:10.942 22084:22135 D/BLASTBufferQueue ]
+[VRI[Pref]#16](f:0,a:1) acquireNextBufferLocked size=1370x537 mFrameNumber=1 applyTransaction=true mTimestamp=205337937106043(auto) mPendingTransactions.size=0 graphicBufferId=94850057764933 transform=0
+
+[ 10-30 21:35:10.942 22084:22135 D/VRI[Pref] ]
+Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+
+[ 10-30 21:35:10.942 22084:22084 D/VRI[Pref] ]
+draw finished. seqId=0
+
+[ 10-30 21:35:10.942 22084:22084 D/VRI[Pref] ]
+reportDrawFinished
+
+[ 10-30 21:35:10.942 22084:22084 D/ViewRootImplExtImpl ]
+setMaxDequeuedBufferCount: 2
+
+[ 10-30 21:35:10.949 22084:22084 D/VRI[其他] ]
+onFocusEvent false
+
+--------- beginning of system
+[ 10-30 21:35:10.950 22084:22084 I/Quality  ]
+Skipped: false 6 cost 45.28283 refreshRate 6927746 bit true processName com.osfans.trime.accessibility
+
+[ 10-30 21:35:10.957 22084:22135 D/VRI[Pref] ]
+Received frameCommittedCallback lastAttemptedDrawFrameNum=4 didProduceBuffer=true syncBuffer=false
+
+[ 10-30 21:35:10.957 22084:22084 D/VRI[Pref] ]
+draw finished. seqId=0
+
+[ 10-30 21:35:10.957 22084:22084 D/VRI[Pref] ]
+reportDrawFinished
+
+[ 10-30 21:35:10.978 22084:22104 I/Rime-JNI ]
+finalize...
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+java.lang.RuntimeException: full_check true
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at com.osfans.trime.Rime.get(Unknown Source:24)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at com.osfans.trime.Function.deploy(Unknown Source:4)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at com.osfans.trime.Pref$TrimePreferenceFragment$9.a(Unknown Source:14)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at com.osfans.trime.Pref$TrimePreferenceFragment$9.doInBackground(Unknown Source:2)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:290)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:305)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+
+[ 10-30 21:35:10.978 22084:22104 W/System.err ]
+	at java.lang.Thread.run(Thread.java:1012)
+
+[ 10-30 21:35:10.987 22084:22084 D/VRI[Pref] ]
+onFocusEvent true
+
+[ 10-30 21:35:11.115 22084:22104 I/native   ]
+I/core_module.cc:20 registering core components.
+
+
+[ 10-30 21:35:11.115 22084:22104 I/native   ]
+I/registry.cc:14 registering component: config_builder
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: config
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: schema
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: user_config
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/dict_module.cc:25 registering components from module 'dict'.
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: tabledb
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: stabledb
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: plain_userdb
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: userdb
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: corrector
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: dictionary
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: reverse_lookup_dictionary
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: user_dictionary
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: userdb_recovery_task
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/gears_module.cc:43 registering components from module 'gears'.
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: ascii_composer
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: chord_composer
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: express_editor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: fluid_editor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: fluency_editor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: key_binder
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: navigator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: punctuator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: recognizer
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: selector
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: speller
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: shape_processor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: abc_segmentor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: affix_segmentor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: ascii_segmentor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: matcher
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: punct_segmentor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: fallback_segmentor
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: echo_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: punct_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: table_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: script_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: r10n_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: reverse_lookup_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: schema_list_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: switch_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: codepoint_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: history_translator
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: simplifier
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: uniquifier
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: charset_filter
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: cjk_minifier
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: reverse_lookup_filter
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: single_char_filter
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/registry.cc:14 registering component: shape_formatter
+
+
+[ 10-30 21:35:11.116 22084:22104 I/native   ]
+I/modules.cc:65 registering components from module 'lua'.
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/modules.cc:56 rime.lua info: rime.lua should be either in the rime user data directory or in the rime shared data directory
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: lua_translator
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: lua_filter
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: lua_segmentor
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: lua_processor
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/grammar_module.cc:14 registering components from module 'grammar'.
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: grammar
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/levers_module.cc:23 registering components from module 'levers'.
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: detect_modifications
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: installation_update
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: workspace_update
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: schema_update
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: config_file_update
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: prebuild_all_schemas
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: user_dict_upgrade
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: cleanup_trash
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: user_dict_sync
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: backup_config_files
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/registry.cc:14 registering component: clean_old_log_files
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/deployment_tasks.cc:80 updating rime installation info.
+
+
+[ 10-30 21:35:11.119 22084:22104 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/installation.yaml'.
+
+
+[ 10-30 21:35:11.124 22084:22104 I/native   ]
+I/deployment_tasks.cc:98 installation info exists. installation id: Realme-GT5-RimeZW
+
+
+[ 10-30 21:35:11.124 22084:22104 I/native   ]
+I/deployment_tasks.cc:106 sync dir: /sdcard/android/rime/RimeSync
+
+
+[ 10-30 21:35:11.124 22084:22104 I/native   ]
+I/deployment_tasks.cc:114 previous Rime version: 1.5.3
+
+
+[ 10-30 21:35:11.124 22084:22104 I/native   ]
+I/deployer.cc:114 starting work thread for 3 tasks.
+
+
+[ 10-30 21:35:11.125 22084:29001 I/native   ]
+I/deployer.cc:83 running deployment tasks:
+
+
+[ 10-30 21:35:11.125 22084:29001 I/native   ]
+I/deployment_tasks.cc:160 updating workspace.
+
+
+[ 10-30 21:35:11.127 22084:29001 W/native   ]
+W/config_data.cc:62 nonexistent config file '/sdcard/android/rime/build/default.yaml'.
+
+
+[ 10-30 21:35:11.127 22084:29001 I/native   ]
+I/deployment_tasks.cc:394 missing build info
+
+
+[ 10-30 21:35:11.129 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/default.yaml'.
+
+
+[ 10-30 21:35:11.135 22084:29001 I/native   ]
+I/auto_patch_config_plugin.cc:28 auto-patch default:/__patch: default.custom:/patch?
+
+
+[ 10-30 21:35:11.135 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/default.custom.yaml'.
+
+
+[ 10-30 21:35:11.138 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching ascii_composer
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching key_binder
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching menu
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching punctuator
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching recognizer
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching schema_list
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching switcher
+
+
+[ 10-30 21:35:11.139 22084:29001 I/native   ]
+I/config_compiler.cc:539 resolved: Patch(default.custom:patch <optional>)
+
+
+[ 10-30 21:35:11.140 22084:29001 I/native   ]
+I/config_data.cc:85 saving config file '/sdcard/android/rime/build/default.yaml'.
+
+
+[ 10-30 21:35:11.143 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/default.yaml'.
+
+
+[ 10-30 21:35:11.145 22084:29001 I/native   ]
+I/deployment_tasks.cc:183 updating schemas.
+
+
+[ 10-30 21:35:11.145 22084:29001 I/native   ]
+I/deployment_tasks.cc:193 schema: wubi86_jidian
+
+
+[ 10-30 21:35:11.145 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:11.147 22084:29001 W/native   ]
+W/config_data.cc:62 nonexistent config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:11.147 22084:29001 I/native   ]
+I/deployment_tasks.cc:394 missing build info
+
+
+[ 10-30 21:35:11.147 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:11.148 22084:29001 I/native   ]
+I/auto_patch_config_plugin.cc:28 auto-patch wubi86_jidian.schema:/__patch: wubi86_jidian.custom:/patch?
+
+
+[ 10-30 21:35:11.148 22084:29001 W/native   ]
+W/config_data.cc:62 nonexistent config file '/sdcard/android/rime/wubi86_jidian.custom.yaml'.
+
+
+[ 10-30 21:35:11.148 22084:29001 I/native   ]
+I/config_compiler.cc:426 optional resource not loaded: wubi86_jidian.custom
+
+
+[ 10-30 21:35:11.148 22084:29001 I/native   ]
+I/config_compiler.cc:539 resolved: Patch(wubi86_jidian.custom:patch <optional>)
+
+
+[ 10-30 21:35:11.148 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/default.yaml'.
+
+
+[ 10-30 21:35:11.152 22084:29001 I/native   ]
+I/auto_patch_config_plugin.cc:28 auto-patch default:/__patch: default.custom:/patch?
+
+
+[ 10-30 21:35:11.152 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/default.custom.yaml'.
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching ascii_composer
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching key_binder
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching menu
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching punctuator
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching recognizer
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching schema_list
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:212 patching switcher
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/config_compiler.cc:539 resolved: Patch(default.custom:patch <optional>)
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/legacy_preset_config_plugin.cc:25 interpreting key_binder/import_preset: default
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/legacy_preset_config_plugin.cc:52 interpreting punctuator/import_preset: default
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/legacy_preset_config_plugin.cc:64 interpreting recognizer/import_preset: default
+
+
+[ 10-30 21:35:11.153 22084:29001 I/native   ]
+I/build_info_plugin.cc:25 resource 'wubi86_jidian.custom' not loaded.
+
+
+[ 10-30 21:35:11.154 22084:29001 I/native   ]
+I/config_data.cc:85 saving config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:11.158 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:11.161 22084:29001 I/native   ]
+I/deployment_tasks.cc:358 preparing dictionary 'wubi86_jidian'.
+
+
+[ 10-30 21:35:11.161 22084:29001 I/native   ]
+I/dict_compiler.cc:41 compiling dictionary for /sdcard/android/rime/build/wubi86_jidian.schema.yaml
+
+
+[ 10-30 21:35:11.162 22084:29001 I/native   ]
+I/dict_compiler.cc:56 dict name: wubi86_jidian
+
+
+[ 10-30 21:35:11.162 22084:29001 I/native   ]
+I/dict_compiler.cc:57 dict version: 4.3
+
+
+[ 10-30 21:35:11.187 22084:29001 I/native   ]
+I/dict_compiler.cc:109 /sdcard/android/rime/wubi86_jidian.dict.yaml[4 file(s)] (2889248752)
+
+
+[ 10-30 21:35:11.187 22084:29001 I/native   ]
+I/dict_compiler.cc:111 /sdcard/android/rime/build/wubi86_jidian.schema.yaml (3686416627)
+
+
+[ 10-30 21:35:11.188 22084:29001 I/native   ]
+I/dict_compiler.cc:149 building table...
+
+
+[ 10-30 21:35:11.188 22084:29001 I/native   ]
+I/entry_collector.cc:56 collecting entries from /sdcard/android/rime/wubi86_jidian.dict.yaml
+
+
+[ 10-30 21:35:11.230 22084:29001 W/native   ]
+W/entry_collector.cc:92 Missing entry text at #7883.
+
+
+[ 10-30 21:35:11.232 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition 'ю': [coxe].
+
+
+[ 10-30 21:35:11.285 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '一键': [ggqv].
+
+
+[ 10-30 21:35:11.303 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '瞻仰': [hqwq].
+
+
+[ 10-30 21:35:11.581 22084:29001 I/native   ]
+I/entry_collector.cc:123 Pass 1: total 89264 entries collected.
+
+
+[ 10-30 21:35:11.581 22084:29001 I/native   ]
+I/entry_collector.cc:124 num unique syllables: 77179
+
+
+[ 10-30 21:35:11.581 22084:29001 I/native   ]
+I/entry_collector.cc:125 num of entries to encode: 0
+
+
+[ 10-30 21:35:11.581 22084:29001 I/native   ]
+I/entry_collector.cc:56 collecting entries from /sdcard/android/rime/wubi86_jidian_user.dict.yaml
+
+
+[ 10-30 21:35:11.584 22084:29001 I/native   ]
+I/entry_collector.cc:123 Pass 1: total 89265 entries collected.
+
+
+[ 10-30 21:35:11.584 22084:29001 I/native   ]
+I/entry_collector.cc:124 num unique syllables: 77179
+
+
+[ 10-30 21:35:11.584 22084:29001 I/native   ]
+I/entry_collector.cc:125 num of entries to encode: 0
+
+
+[ 10-30 21:35:11.584 22084:29001 I/native   ]
+I/entry_collector.cc:56 collecting entries from /sdcard/android/rime/wubi86_jidian_user_hamster.dict.yaml
+
+
+[ 10-30 21:35:11.585 22084:29001 I/native   ]
+I/entry_collector.cc:123 Pass 1: total 89265 entries collected.
+
+
+[ 10-30 21:35:11.585 22084:29001 I/native   ]
+I/entry_collector.cc:124 num unique syllables: 77179
+
+
+[ 10-30 21:35:11.585 22084:29001 I/native   ]
+I/entry_collector.cc:125 num of entries to encode: 0
+
+
+[ 10-30 21:35:11.585 22084:29001 I/native   ]
+I/entry_collector.cc:56 collecting entries from /sdcard/android/rime/wubi86_jidian_extra.dict.yaml
+
+
+[ 10-30 21:35:11.589 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '胎压': [ecdf].
+
+
+[ 10-30 21:35:11.589 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '项羽': [adnn].
+
+
+[ 10-30 21:35:11.589 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '扁鹊': [ynaj].
+
+
+[ 10-30 21:35:11.589 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '元歌': [fqsk].
+
+
+[ 10-30 21:35:11.591 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '王筝': [ggtq].
+
+
+[ 10-30 21:35:11.591 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '斑马': [gycn].
+
+
+[ 10-30 21:35:11.592 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '陀螺仪': [bjwy].
+
+
+[ 10-30 21:35:11.595 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition 'AirPods': [airp].
+
+
+[ 10-30 21:35:11.595 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition 'AirPods Pro': [airp].
+
+
+[ 10-30 21:35:11.595 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition 'AirPower': [airp].
+
+
+[ 10-30 21:35:11.602 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '莒县': [akeg].
+
+
+[ 10-30 21:35:11.602 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '万达': [dndp].
+
+
+[ 10-30 21:35:11.602 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '下屯': [ghgb].
+
+
+[ 10-30 21:35:11.602 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '沂水': [irii].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥂': [kjis].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '新型冠状病毒': [ugpg].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😉': [ryhv].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤗': [tada].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🙂': [tmtt].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🙃': [tmtt].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😆': [ddtt].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😂': [ttkk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤣': [ttkk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥰': [ep].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤩': [kffg].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥶': [dndn].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤗': [tada].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '👍': [xk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '👍': [rhk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😭': [ddkk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥳': [ydpy].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😎': [tdgk].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😉': [ryhv].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😉': [ryhv].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😊': [skep].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😏': [klkl].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😝': [kftd].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😛': [kftd].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😋': [vbkt].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😚': [usus].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😘': [epwq].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😗': [usus].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😙': [usus].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤩': [wow].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😤': [tgrn].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😳': [ks].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😡': [tgrn].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤬': [kkww].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤫': [khag].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤔': [lnft].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤗': [tada].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤗': [wala].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😓': [ifh].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤮': [tgug].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤒': [ntoa].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤧': [thiu].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤧': [dgjh].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '👽': [qjww].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🤐': [ufkh].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥱': [kwqw].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '🥱': [lsbn].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😴': [htip].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😪': [htip].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '😪': [htud].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '💀': [meme].
+
+
+[ 10-30 21:35:11.603 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '💩': [ococ].
+
+
+[ 10-30 21:35:11.604 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '💩': [wgwg].
+
+
+[ 10-30 21:35:11.604 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '👻': [rqc].
+
+
+[ 10-30 21:35:11.604 22084:29001 W/native   ]
+W/entry_collector.cc:193 duplicate word definition '叕': [cccc].
+
+
+[ 10-30 21:35:11.605 22084:29001 I/native   ]
+I/entry_collector.cc:123 Pass 1: total 91050 entries collected.
+
+
+[ 10-30 21:35:11.605 22084:29001 I/native   ]
+I/entry_collector.cc:124 num unique syllables: 78018
+
+
+[ 10-30 21:35:11.605 22084:29001 I/native   ]
+I/entry_collector.cc:125 num of entries to encode: 0
+
+
+[ 10-30 21:35:11.605 22084:29001 I/native   ]
+I/entry_collector.cc:137 Pass 2: total 91050 entries collected.
+
+
+[ 10-30 21:35:11.605 22084:29001 I/native   ]
+I/entry_collector.cc:149 Pass 3: total 91050 entries collected.
+
+
+[ 10-30 21:35:11.706 22084:29001 I/native   ]
+I/table.cc:364 building table.
+
+
+[ 10-30 21:35:11.706 22084:29001 I/native   ]
+I/table.cc:365 num syllables: 78018
+
+
+[ 10-30 21:35:11.706 22084:29001 I/native   ]
+I/table.cc:366 num entries: 91050
+
+
+[ 10-30 21:35:11.706 22084:29001 I/native   ]
+I/table.cc:367 estimated file size: 8327872
+
+
+[ 10-30 21:35:11.707 22084:29001 I/native   ]
+I/mapped_file.cc:93 creating file '/sdcard/android/rime/build/wubi86_jidian.table.bin'.
+
+
+[ 10-30 21:35:11.708 22084:29001 I/native   ]
+I/mapped_file.cc:104 opening file for read/write access.
+
+
+[ 10-30 21:35:11.708 22084:29001 I/native   ]
+I/table.cc:373 creating metadata.
+
+
+[ 10-30 21:35:11.708 22084:29001 I/native   ]
+I/table.cc:387 creating syllabary.
+
+
+[ 10-30 21:35:11.722 22084:29001 I/native   ]
+I/table.cc:401 creating table index.
+
+
+[ 10-30 21:35:11.775 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@1e0d70a
+
+[ 10-30 21:35:11.776 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@82e4636
+
+[ 10-30 21:35:11.776 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@6695e3f
+
+[ 10-30 21:35:11.776 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@ebe055a
+
+[ 10-30 21:35:11.794 22084:29001 I/native   ]
+I/table.cc:345 saving table file: /sdcard/android/rime/build/wubi86_jidian.table.bin
+
+
+[ 10-30 21:35:11.794 22084:29001 I/native   ]
+I/mapped_file.cc:152 shrinking file to fit data size. capacity: 8327872
+
+
+[ 10-30 21:35:11.794 22084:29001 I/native   ]
+I/mapped_file.cc:163 resize file to: 2374676
+
+
+[ 10-30 21:35:11.800 22084:29001 I/native   ]
+I/reverse_lookup_dictionary.cc:83 building reversedb...
+
+
+[ 10-30 21:35:11.956 22084:25914 D/OplusScrollToTopManager ]
+其他,This DecorView@f86b8e0[其他] change focus to false
+
+[ 10-30 21:35:11.962 22084:29001 I/native   ]
+I/mapped_file.cc:93 creating file '/sdcard/android/rime/build/wubi86_jidian.reverse.bin'.
+
+
+[ 10-30 21:35:11.964 22084:29001 I/native   ]
+I/mapped_file.cc:104 opening file for read/write access.
+
+
+[ 10-30 21:35:11.984 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@1e0d70a
+
+[ 10-30 21:35:11.988 22084:25914 D/OplusScrollToTopManager ]
+com.osfans.trime.accessibility/com.osfans.trime.Pref,This DecorView@c93d6bd[Pref] change focus to true
+
+[ 10-30 21:35:11.992 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@82e4636
+
+[ 10-30 21:35:11.993 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@6695e3f
+
+[ 10-30 21:35:11.993 22084:22084 D/ViewRootImplExtImpl ]
+onDisplayChanged 0 for VRI android.view.ViewRootImpl@ebe055a
+
+[ 10-30 21:35:12.016 22084:22084 D/VRI[Pref] ]
+onFocusEvent false
+
+[ 10-30 21:35:12.206 22084:29001 I/native   ]
+I/dict_compiler.cc:211 building prism...
+
+
+[ 10-30 21:35:12.206 22084:29001 I/native   ]
+I/table.cc:299 loading table file: /sdcard/android/rime/build/wubi86_jidian.table.bin
+
+
+[ 10-30 21:35:12.276 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:12.320 22084:29001 I/native   ]
+I/mapped_file.cc:93 creating file '/sdcard/android/rime/build/wubi86_jidian.prism.bin'.
+
+
+[ 10-30 21:35:12.322 22084:29001 I/native   ]
+I/mapped_file.cc:104 opening file for read/write access.
+
+
+[ 10-30 21:35:12.332 22084:29001 I/native   ]
+I/prism.cc:118 saving prism file: /sdcard/android/rime/build/wubi86_jidian.prism.bin
+
+
+[ 10-30 21:35:12.332 22084:29001 I/native   ]
+I/mapped_file.cc:152 shrinking file to fit data size. capacity: 1600792
+
+
+[ 10-30 21:35:12.332 22084:29001 I/native   ]
+I/mapped_file.cc:163 resize file to: 663868
+
+
+[ 10-30 21:35:12.341 22084:29001 I/native   ]
+I/deployment_tasks.cc:376 dictionary 'wubi86_jidian' is ready.
+
+
+[ 10-30 21:35:12.344 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:12.347 22084:29001 I/native   ]
+I/deployment_tasks.cc:241 finished updating schemas: 1 success, 0 failure.
+
+
+[ 10-30 21:35:12.348 22084:29001 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/user.yaml'.
+
+
+[ 10-30 21:35:12.349 22084:29001 I/native   ]
+I/config_data.cc:199 write: var/last_build_time
+
+
+[ 10-30 21:35:12.349 22084:29001 I/native   ]
+I/config_data.cc:85 saving config file '/sdcard/android/rime/user.yaml'.
+
+
+[ 10-30 21:35:12.350 22084:29001 I/native   ]
+I/deployment_tasks.cc:591 clean up trash.
+
+
+[ 10-30 21:35:12.360 22084:29001 I/native   ]
+I/deployer.cc:95 3 tasks ran: 3 success, 0 failure.
+
+
+[ 10-30 21:35:12.361 22084:22104 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/default.yaml'.
+
+
+[ 10-30 21:35:12.367 22084:22104 I/native   ]
+I/engine.cc:71 starting engine.
+
+
+[ 10-30 21:35:12.367 22084:22104 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/user.yaml'.
+
+
+[ 10-30 21:35:12.368 22084:22104 I/native   ]
+I/config_data.cc:65 loading config file '/sdcard/android/rime/build/wubi86_jidian.schema.yaml'.
+
+
+[ 10-30 21:35:12.373 22084:22104 I/native   ]
+I/engine.cc:126 updated option: _auto_commit
+
+
+[ 10-30 21:35:12.374 22084:22104 I/native   ]
+I/dictionary.cc:261 loading dictionary 'wubi86_jidian'.
+
+
+[ 10-30 21:35:12.374 22084:22104 I/native   ]
+I/table.cc:299 loading table file: /sdcard/android/rime/build/wubi86_jidian.table.bin
+
+
+[ 10-30 21:35:12.374 22084:22104 I/native   ]
+I/prism.cc:77 loading prism file: /sdcard/android/rime/build/wubi86_jidian.prism.bin
+
+
+[ 10-30 21:35:12.375 22084:22104 I/native   ]
+I/prism.cc:107 found double array image of size 165888.
+
+
+[ 10-30 21:35:12.380 22084:22104 I/native   ]
+I/engine.cc:126 updated option: ascii_mode
+
+
+[ 10-30 21:35:12.380 22084:22104 I/native   ]
+I/engine.cc:126 updated option: zh_trad
+
+
+[ 10-30 21:35:12.380 22084:22104 I/native   ]
+I/engine.cc:126 updated option: simplification
+
+
+[ 10-30 21:35:12.380 22084:22104 I/Rime     ]
+message: [option] simplification
+
+[ 10-30 21:35:12.380 22084:22104 W/rime     ]
+getContexts: 19792
+
+[ 10-30 21:35:12.380 22084:22104 W/rime     ]
+getStatus: 9063
+
+[ 10-30 21:35:12.380 22084:22104 W/rime     ]
+full_check: 
+
+[ 10-30 21:35:12.380 22084:22104 I/Pref     ]
+Deploy: end
+

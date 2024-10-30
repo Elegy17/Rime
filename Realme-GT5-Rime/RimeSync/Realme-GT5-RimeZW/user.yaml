@@ -1,0 +1,12 @@
+var:
+  last_build_time: 1730295312
+  option:
+    full_shape: false
+    simplification: true
+  previously_selected_schema: wubi86_jidian
+  schema_access_time:
+    double_pinyin_flypy: 1730279930
+    luna_pinyin: 1730280181
+    numbers: 1730280885
+    pinyin_simp: 1730293404
+    wubi86_jidian: 1730293431

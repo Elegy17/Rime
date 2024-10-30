@@ -1,0 +1,12 @@
+{
+  LinearLayout,
+  orientation="vertical",
+  layout_width="fill",
+  layout_height="fill",
+  {
+    ListView,
+    id="list",
+    items={"..."},
+    layout_width="fill",
+  },
+}

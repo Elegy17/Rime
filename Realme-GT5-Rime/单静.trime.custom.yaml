@@ -1,0 +1,17 @@
+patch:  
+  "style/horizontal": false #水平模式。改变方向键的功能 （true：方向键适配横排候选；false：方向键适配竖排候选）
+  #悬浮窗口
+  "style/layout/max_entries": 5  #候选窗口最大词条数
+  "style/layout/spacing": 3  #与预编輯或边缘的距离，调整至下方
+  "style/layout/max_height": 10 #最大高度
+  "style/layout/min_width": 40 #最小宽度
+  "style/layout/min_height": 0 #最小高度
+  "style/layout/line_spacing": 0 #候选词的行间距(px)
+  "style/layout/line_spacing_multiplier": 1.1 #候选词的行间距(倍数)
+  "style/layout/position": right #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要>=Android5.0)
+  "style/layout/movable": false #是否可移动窗口，或仅移动一次 true|false|once
+  "style/layout/round_corner": 25 #窗口圆角
+  "style/layout/min_length": 1 #最小词长
+  "style/layout/max_length": 15 #超过字数则换行
+  "style/layout/sticky_lines": 0 #固顶行数
+  "style/layout/max_width": 330 #最大宽度，超过则自动换行

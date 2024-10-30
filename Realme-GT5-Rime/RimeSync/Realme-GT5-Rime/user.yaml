@@ -1,0 +1,8 @@
+var:
+  last_build_time: 1730279578
+  option:
+    ascii_punct: false
+    extended_charset: false
+    search_single_char: true
+    simplification: false
+    traditionalization: true
