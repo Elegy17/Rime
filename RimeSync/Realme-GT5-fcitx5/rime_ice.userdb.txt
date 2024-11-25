@@ -1,0 +1,6 @@
+# Rime user dictionary
+#@/db_name	rime_ice
+#@/db_type	userdb
+#@/rime_version	1.11.0
+#@/tick	0
+#@/user_id	Realme-GT5-fcitx5

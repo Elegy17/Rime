@@ -1,0 +1,16 @@
+var:
+  last_build_time: 1732515775
+  option:
+    ascii_punct: false
+    emoji: false
+    extended_charset: false
+    full_shape: false
+    search_single_char: true
+    simplification: false
+    traditionalization: false
+  previously_selected_schema: double_pinyin_flypy
+  schema_access_time:
+    double_pinyin_flypy: 1732512795
+    melt_eng: 1730560297
+    pinyin_flypy: 1730563027
+    wubi86: 1732512408

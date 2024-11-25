@@ -1,0 +1,174 @@
+# wubi86.custom.yaml
+patch:
+
+  "schema":
+    schema_id: wubi86
+    name: "五笔86"
+    version: "0.21"
+    author:
+      - 發明人 王永民先生
+    description: |
+      五筆字型86版
+      碼表源自 ibus-table
+      敲 z 鍵進入拼音反查
+    dependencies:
+      - pinyin_simp
+      - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
+
+    
+  "switches":
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      states: [ 简体, 繁體 ]
+    - name: extended_charset
+      states: [ 常用, 增廣 ]
+    # - name: melt_eng
+      # states: [ 中文, 英文 ]
+    # - name: enable_encoder
+      # states: [ 正常, 造词 ]
+    - name: emoji
+      states: [ 💀, 😄 ]
+    - name: ascii_punct
+      states: [ 。，, "．," ]
+    
+  "engine":
+    processors:
+      - ascii_composer
+      - recognizer
+      - key_binder
+      - speller
+      - punctuator
+      - selector
+      - navigator
+      - express_editor
+    segmentors:
+      - ascii_segmentor
+      - matcher
+      - abc_segmentor
+      - punct_segmentor
+      - fallback_segmentor
+    translators:
+      - punct_translator
+      - reverse_lookup_translator
+      - table_translator
+      # - table_translator@melt_eng         # 英文输入
+      - history_translator@repeat_last_input # 重复上一次输入，对应下面的 repeat_last_input
+      - history_translator@repeat_last_input1  #重复上屏
+      - history_translator@repeat_last_input2  #重复上屏2
+    filters:
+      - simplifier@simplification  #简繁滤镜
+      - uniquifier  #过滤重复字符
+      - simplifier@emoji  # Emoji表情
+
+  #★拼写运算处理★
+  "speller/alphabet": "abcdefghijklmnopqrstuvwxyz/"                  #定义本方案输入键
+  "speller/finals": ""                                               #定义仅作末码之键
+  "speller/delimiter": " ;'"                                           #上屛时的音节间分音符
+  "speller/auto_select": true                                        #自动上屛〔true或false〕
+  "speller/max_code_length": 4                                       #形码最大码长，超过则顶字上屛
+  "speller/auto_select_pattern": ^;.$|^\w{4}$                       #自动上屏规则,当输入串可以被匹配时自动顶字上屏
+  "speller/auto_clear": auto      #自动清码参数：manual空码按下一键确认清屏、auto空码自动清、max_length达最长码时后码顶上清屏
+  "speller/algebra":                     #拼写运算规则，由之算出的拼写汇入prism中,演算包含：
+     #- derive/^.(.*)$/'$1/             #万能拼运, 〔以下几条运算可实现‘号作万能学习键，开启后影响运行速度〕
+     #- derive/^(.).(.*)$/$1'$2/        #万能拼运
+     #- derive/^(..).(.*)$/$1'$2/       #万能拼运
+     #- derive/^(...).(.*)$/$1'$2/      #万能拼运
+     #- derive/^(...).$/$1'/            #万能拼运
+    
+# 指定自定义词库位置
+  "translator/dictionary": wubi86.config
+  "translator/db_class": userdb                #设定用户词典类型，可设tabledb〔文本〕或userdb〔二进制〕
+  "translator/initial_quality": 1            #设定此翻译器出字优先级, 数值越大, 候选排序越靠前
+  "translator/spelling_hints": 4                #设定n字内候选标注完整带调拼音〔仅script_translator有效〕
+  "translator/enable_charset_filter": true     # 开启字符集过滤,限制生辟字 true
+  "translator/enable_sentence": false           #组词造句整句模式
+  "translator/enable_encoder": true            #造词开关
+  "translator/encode_commit_history": true     #对连续上屏字自动造词
+  "translator/min_phrase_length": 3            #允许自动造词的最小字数
+  "translator/max_phrase_length": 6            #允许自动造词的最大字数
+  "translator/enable_completion": true          #编码提示（用于table_translator）提前显示尚未输入完整码的字【true 或 false】
+  "translator/always_show_comments": true       #新增[always_show_comments]选项，允许始终显示候选词注解
+  "translator/sentence_over_completion": false  #在无全码对应字而仅有逐键提示时也开启智能组句〔仅table_translator有效〕
+  "translator/strict_spelling": true           #配合[speller]中的fuzz规则，仅以略拼码组词〔仅table_translator有效〕
+  "translator/enable_user_dict": true          #用户词典开关
+  "translator/disable_user_dict_for_patterns":  #当编码匹配以下格式时，用户词典无效
+     - "^z.$"
+  "translator/enable_correction": false         #新增拼写纠错,当前仅限QWERTY键盘布局及使用[script_translator]的方案
+  "translator/comment_format":                   #去掉编码提示前的~号
+     - "xform/~//"
+
+  # Emoji
+  emoji:
+    option_name: emoji
+    opencc_config: emoji.json
+    inherit_comment: false  # 在 corrector.lua 及反查中，emoji 返回空注释
+
+  #↓简繁滤镜
+  "simplification":
+    opencc_config: s2t.json  # 简 -> 繁
+    # opencc_config: s2hk.json  # 繁 -> 香港
+    # opencc_config: t2s.json   # 繁 -> 简
+    # opencc_config: t2tw.json  # 繁 -> 台湾
+    # opencc_config: t2hk.json  # 繁 -> 香港
+    # opencc_config: s2tw.json  # 簡 -> 臺灣標準
+    # opencc_config: s2twp.json  # 簡 -> 臺灣片語
+    option_name: simplification
+    # show_in_comment: true
+    # tips: all  #简繁对照，all字詞  char字
+  
+  # 重复上一次输入
+  "repeat_last_input":
+    input: z
+    size: 1
+    initial_quality: 1
+  
+  "repeat_last_input1":
+    input: z
+    size: 2  #重复前几次上屏
+    initial_quality: 90  #首选
+
+  "repeat_last_input2":
+    input: z
+    size: 3  #重复前几次上屏
+    initial_quality: 80
+  
+  "reverse_lookup":
+    dictionary: pinyin_simp
+    prefix: "z"
+    suffix: "'"
+    tips: 〔拼音〕
+    preedit_format:
+      - xform/([nl])v/$1ü/
+      - xform/([nl])ue/$1üe/
+      - xform/([jqxy])v/$1u/
+      - xform|~||
+      - xform/[0-9]//  #无数字
+    
+  # 次翻译器，英文
+  # "melt_eng":
+    # dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
+    # enable_sentence: false   # 禁止造句
+    # enable_user_dict: false  # 禁用用户词典
+    # initial_quality: 0     # 初始权重
+    # comment_format:          # 自定义提示码
+      # - xform/.*//           # 清空提示码
+    
+  "key_binder/bindings":
+    # - { when: has_menu, accept: space, send: space }          # 空码时按空格键清空输入码首先需要关闭码表输入法连打（参见上文），这样才可以在打空时不出候选词。
+    # - { when: composing, accept: space, send: Escape }        # 同上▲
+    # - { when: has_menu, accept: comma, send: 4 }             #逗号键 "四选"
+    - { when: has_menu, accept: semicolon, send: 3 }             #分号键 "三选"
+    - { when: has_menu, accept: apostrophe, send: 2 }             #撇号键 "次选"
+    
+  "recognizer":
+    import_preset: default
+    patterns:
+      punct: '^/([0-9]0?|[A-Za-z]+)$'
+      reverse_lookup: "^z[a-z]*'?$"
+      uppercase: ""  #中文状态大写锁定直接上屏
+      23m: "^[a-y]{2,3}$"  #二三码空码不自动上屏
+      zf: '^z[a-z]{0,3}$'  #卡Z

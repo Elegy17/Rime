@@ -1,0 +1,3 @@
+patch:
+  "style/layout/position": right #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要>=Android5.0)
+  "style/candidate_font: PlangothicP1-Regular.allideo.ttf #候选字型"

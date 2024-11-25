@@ -1,0 +1,13 @@
+var:
+  last_build_time: 1730216696
+  option:
+    ascii_punct: true
+    emoji: true
+    full_shape: false
+    search_single_char: false
+    traditionalization: false
+  previously_selected_schema: wubi86
+  schema_access_time:
+    double_pinyin_flypy: 1730067431
+    rime_ice: 1730067429
+    wubi86: 1730154387

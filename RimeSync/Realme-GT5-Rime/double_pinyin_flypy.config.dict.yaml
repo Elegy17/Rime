@@ -1,0 +1,10 @@
+---
+name: double_pinyin_flypy.config
+version: "1.7"
+sort: by_weight
+use_preset_vocabulary: true
+# 导入扩充词库
+import_tables:
+  - pinyin_simp
+  - dicts/pinyin_flypy    # 简体词库
+...
